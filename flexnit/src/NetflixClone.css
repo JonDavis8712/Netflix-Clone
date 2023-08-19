@@ -1,0 +1,62 @@
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Bebas Neue', sans-serif;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    position: absolute;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding-top: 15px;
+}
+
+.logo > img {
+    width: 120px;
+  }
+
+h2 {
+    font-size: 2rem;
+}
+
+.original_movies,
+.movies_container {
+  padding-left: 50px;
+  display: flex;
+  overflow-x: scroll;
+  overflow: hidden;
+}
+
+.original_movies::-webkit-scrollbar {
+    display: none;
+  }
+
+.original_movies img:hover,
+.movies_container img:hover {
+    transform: scale(1.1);
+  }
+
+.original_movies img,
+.movies_container img {
+  transition: all 0.2s ease-out;
+  cursor: pointer;
+}
+
+.original_movies img {
+    margin-right: 10px;
+    height: 250px;
+    width: auto;
+}
+
+.movies_container img {
+    margin-right: 10px;
+    height: 250px;
+}
